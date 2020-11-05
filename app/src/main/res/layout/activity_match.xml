@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.MatchActivity">
+<LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <!--Cabecera-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/header_background">
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="71dp"
+                android:paddingTop="10dp"
+                android:text="@string/match"
+                android:textColor="@color/white"
+                android:textSize="36dp"
+                android:textAlignment="center"
+                android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                android:gravity="center_horizontal"/>
+    </LinearLayout>
+    <!--End Cabecera-->
+
+    <!--Contenido-->
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+        <!--Marcadores de puntos-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/points_team_right"
+                    android:layout_width="172dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="125dp"/>
+
+            <!-- Línea de separación entre puntos-->
+            <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+            />
+            <!-- End Línea de separación entre puntos-->
+
+            <TextView
+                    android:id="@+id/points_team_left"
+                    android:layout_width="164dp"
+                    android:layout_height="180dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="125dp"/>
+        </LinearLayout>
+        <!-- End Marcadores de puntos-->
+
+        <!-- Línea de separación entre puntos y sets-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/black"
+                android:orientation="vertical"
+        />
+        <!-- End Línea de separación entre puntos y sets-->
+
+        <!--Marcadores de sets-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                    android:id="@+id/sets_team_right"
+                    android:layout_width="97dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="90dp"
+                    android:textSize="50dp" android:layout_marginStart="90dp"/>
+
+            <!-- Línea de separación entre sets-->
+            <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+            />
+            <!-- End Línea de separación entre sets-->
+
+            <TextView
+                    android:id="@+id/sets_team_left"
+                    android:layout_width="100dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="50dp"/>
+        </LinearLayout>
+        <!-- End Marcadores de sets-->
+
+        <!-- Linea de separación entre botones y sets-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/black"
+                android:orientation="vertical"
+        />
+        <!--End Linea de separación entre botones y sets -->
+
+        <!-- Botones de incremento de puntos-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageButton
+                    android:id="@+id/plus_point_right"
+                    android:layout_width="83dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/custom_add_button"
+                    android:src="@drawable/add_circle_insert_plus_icon_149548"
+            />
+
+            <!-- Línea de separación -->
+            <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+            />
+            <!-- End Línea de separación -->
+
+            <ImageButton
+                    android:id="@+id/subtraction_point_right"
+                    android:layout_width="101dp"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_minus_button"
+                    android:src="@drawable/minus_circle_delete_remove_icon_149429"
+            />
+
+            <!-- Línea de separación -->
+            <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+            />
+            <!-- End Línea de separación -->
+
+            <ImageButton
+                    android:id="@+id/plus_point_left"
+                    android:layout_width="91dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/custom_add_button"
+                    android:src="@drawable/add_circle_insert_plus_icon_149548"
+            />
+
+            <!-- Línea de separación -->
+            <LinearLayout
+                    android:layout_width="3dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+            />
+            <!-- End Línea de separación -->
+
+            <ImageButton
+                    android:id="@+id/subtraction_point_left"
+                    android:layout_width="85dp"
+                    android:layout_height="80dp"
+                    android:background="@drawable/custom_minus_button"
+                    android:src="@drawable/minus_circle_delete_remove_icon_149429"
+            />
+
+        </LinearLayout>
+        <!-- End Botones de incremento de puntos-->
+
+        <!-- Linea de separación entre botones y marcador de saque-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:background="@color/black"
+                android:orientation="vertical"
+        />
+        <!--End Linea de separación entre botones y marcador de saque -->
+
+        <!--Indicardor de saque-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <ImageView
+                    android:id="@+id/ball_right"
+                    android:layout_width="186dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/balon_voley"
+            />
+
+            <!-- Linea de separación entre indicador de saque-->
+            <LinearLayout
+                    android:layout_width="5dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/black"
+                    android:orientation="horizontal"
+            />
+            <!--End Linea de separación entre indicador de saque-->
+
+            <ImageView
+                    android:id="@+id/ball_left"
+                    android:layout_width="180dp"
+                    android:layout_height="85dp"
+                    android:src="@drawable/balon_voley"
+            />
+        </LinearLayout>
+        <!--End Indicardor de saque-->
+
+
+    </LinearLayout>
+    <!--End Contenido-->
+</LinearLayout>
+
+  </androidx.constraintlayout.widget.ConstraintLayout>

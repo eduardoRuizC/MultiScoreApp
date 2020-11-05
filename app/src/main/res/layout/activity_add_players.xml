@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent">
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+    >
+
+        <!--Cabecera-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@color/header_background">
+            <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="71dp"
+                    android:paddingTop="10dp"
+                    android:text="@string/add_players"
+                    android:textColor="@color/white"
+                    android:textSize="36dp"
+                    android:textAlignment="center"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                    android:gravity="center_horizontal"/>
+        </LinearLayout>
+        <!--End Cabecera-->
+
+        <!--Añadir jugador-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp">
+
+            <EditText
+                    android:id="@+id/new_player"
+                    android:layout_width="255dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+            />
+
+            <ImageButton
+                    android:id="@+id/button_add_player"
+                    android:layout_width="81dp"
+                    android:layout_height="79dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/add_circle_insert_plus_icon_149548"
+                    android:background="@drawable/custom_add_button"
+            />
+        </LinearLayout>
+        <!--End Añadir jugador-->
+
+        <!-- Linea de separación entre añadir jugador y lista de jugadores-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:orientation="vertical"
+        />
+        <!--End Linea de separación entre añadir jugador y lista de jugadores-->
+
+        <!--Lista de jugadores-->
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="581dp"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp">
+
+            <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="match_parent"
+                              android:layout_height="wrap_content"
+                              android:orientation="vertical">
+                    <ListView
+                            android:id="@+id/players_list"
+                            android:layout_width="match_parent"
+                            android:layout_height="350dp"
+                    />
+                </LinearLayout>
+            </ScrollView>
+            <Button
+                    android:id="@+id/create_team"
+                    android:layout_width="350dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/add_players"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:background="@drawable/custom_menu_button"
+            />
+        </LinearLayout>
+        <!--End Lista de jugadores-->
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

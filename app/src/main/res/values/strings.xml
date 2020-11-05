@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">VoleyApp</string>
+    <string name="match">Partido</string>
+    <string name="counter">00</string>
+    <string name="type_large">Largo 5 sets 25 puntos</string>
+    <string name="type_medium">Medio 3 sets 25 puntos</string>
+    <string name="type_short">Corto 3 sets 15 puntos</string>
+    <string name="type_heating">Calentamiento 1 sets 15 puntos</string>
+    <string name="title_activity_main">ELIGE EL TIPO DE PARTIDO</string>
+    <string name="blue_victory">HAN GANADO LOS AZULES</string>
+    <string name="red_victory">HAN GANADO LOS ROJOS</string>
+    <string name="error">ERROR</string>
+    <string name="add_players">Añade los jugadores</string>
+</resources>

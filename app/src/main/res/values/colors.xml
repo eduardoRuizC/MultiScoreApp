@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+  <resources>
+    <color name="black">#000000</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#3700B3</color>
+    <color name="white">#ffffff</color>
+    <color name="header_background">#42A5F5</color>
+    <color name="menu_button">#42A5F5</color>
+    <color name="plus_button">#1DE9B6</color>
+    <color name="minus_button">#FF8A80</color>
+  </resources>
